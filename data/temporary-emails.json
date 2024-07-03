@@ -1,4 +1,5 @@
-[{
+{
+    "disposable_email_services": [
         "10minutemail.com",
         "20minutemail.com",
         "anonbox.net",
@@ -25,4 +26,5 @@
         "moakt.com",
         "tempail.com",
         "mailcatch.com"
-}]
+    ]
+}
