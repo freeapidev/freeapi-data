@@ -15,19 +15,54 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+            color: white;
         }
 
-        .code-container {
-            border: 1px solid #ddd;
-            padding: 15px;
-            border-radius: 5px;
-            overflow-x: auto;
+        .hero-section {
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .hero-section h1 {
+            font-size: 3rem;
+        }
+
+        .hero-section p {
+            font-size: 1.2rem;
+            margin: 20px 0;
+        }
+
+        .hero-section .btn {
+            margin: 10px;
+        }
+
+        .hero-section .code-container {
+            margin-top: 30px;
+            background-color: #2d2d2d;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow-wrap: break-word;
+            white-space: pre-wrap;
+        }
+
+        .hero-section pre {
+            color: #f8f8f2;
+            text-align: left;
         }
 
         .card {
             margin-top: 20px;
-            transition: transform 0.3s;
+            transition: transform 0.5s;
+            background: rgba(255, 255, 255, 0.06);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(4.7px);
+            -webkit-backdrop-filter: blur(4.7px);
+            border: 1px solid rgba(255, 255, 255, 0.49);
         }
 
         .card:hover {
@@ -42,30 +77,71 @@
 
         .card .card-body .arrow-icon {
             font-size: 1.5rem;
-            color: #007bff;
+            color: white;
         }
 
         .card-title,
         .card-text {
             margin: 0;
+            color: white;
         }
 
         a {
             text-decoration: none;
             color: inherit;
         }
+
+        .features-section {
+            padding: 60px 0;
+        }
+
+        .feature {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .feature i {
+            font-size: 2.5rem;
+            color: #007bff;
+        }
+
+        footer {
+            /* background: #2c5364; */
+            padding: 20px 0;
+            text-align: center;
+            color: white;
+        }
+
+        a:hover {
+            text-decoration: none !important;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: underline;
+        }
     </style>
 </head>
 
 <body>
-    <div class="container">
-        <h1 class="text-center my-4">FreeAPI.dev 🚀 - Free APIs for Developers</h1>
-        <div class="code-container">
-            <pre><code class="language-json">{
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="container">
+            <h1>FreeAPI.dev 🚀</h1>
+            <p>Free APIs for Developers to use in their projects. Explore our documentation and get started today!</p>
+            <a href="https://docs.freeapi.dev" class="btn btn-light btn-lg">Get Started</a>
+            <a href="https://community.freeapi.dev" class="btn btn-outline-light btn-lg">Join Community</a>
+            <div class="code-container">
+                <pre><code class="language-json">{
     "welcome": "Free API for Developers, that is FreeAPI.dev 🚀",
     "documentations": "https://docs.freeapi.dev"
 }</code></pre>
+            </div>
         </div>
+    </div>
+
+    <!-- Cards Section -->
+    <div class="container">
         <div class="row">
             <div class="col-md-4">
                 <a href="https://docs.freeapi.dev" target="_blank">
@@ -109,6 +185,16 @@
             </div>
         </div>
     </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 FreeAPI.dev. All rights reserved.</p>
+            <p><a href="https://freeapi.dev/terms">Terms of Service</a> | <a href="https://freeapi.dev/privacy">Privacy
+                    Policy</a></p>
+        </div>
+    </footer>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
