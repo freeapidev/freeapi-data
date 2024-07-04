@@ -1,0 +1,10 @@
+[
+    {
+        "title":"providers",
+        "endpoint":"https://freeapi.dev/emails/providers"
+    },
+    {
+        "title":"temporary_email_providers",
+        "endpoint":"https://freeapi.dev/emails/temporary"
+    }
+]
