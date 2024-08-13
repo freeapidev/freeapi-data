@@ -1,0 +1,11 @@
+{
+  "docs": "https://docs.freeapi.dev",
+  "npm": "https://www.npmjs.com/package/freeapi",
+  "issues": "https://github.com/freeapidev/freeapi/issues",
+  "endpoints": [
+    "https://freeapi.dev/mobile-brands",
+    "https://freeapi.dev/countrycodes",
+    "https://freeapi.dev/emails/providers",
+    "https://freeapi.dev/emails/temporary"
+  ]
+}
